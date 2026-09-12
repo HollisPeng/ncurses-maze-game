@@ -1,13 +1,13 @@
 # ncurses 迷宫游戏
 
-> 本项目最初是我大一 ESTR1002（Problem Solving by Programming，应用程序设计）课程的期末项目。衷心感谢教授给予我 A。🙏
->
-> 课程结束后，我继续完善了本项目，并在此过程中使用了 GPT-5.6 Sol 辅助。
-
 [![CI](https://github.com/HollisPeng/ncurses-maze-game/actions/workflows/ci.yml/badge.svg)](https://github.com/HollisPeng/ncurses-maze-game/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [English](README.md) · 简体中文
+
+> 本项目最初是我大一 ESTR1002（Problem Solving by Programming，应用程序设计）课程的期末项目。衷心感谢教授给予我 A。🙏
+>
+> 课程结束后，我继续完善了本项目，并在此过程中使用了 GPT-5.6 Sol 辅助。
 
 这是一个使用 C11 和宽字符 ncurses 库开发的终端迷宫游戏。玩家需要穿过迷宫、取得钥匙、避开定时尖刺，并利用传送点和 Powerup 追上不断远离的出口。
 

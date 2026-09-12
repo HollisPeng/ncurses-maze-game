@@ -1,13 +1,13 @@
 # ncurses Maze Game
 
-> This project was originally developed as my final project for ESTR1002 — Problem Solving by Programming during my first year. My sincere thanks to the professor for awarding me an A. 🙏
->
-> Development continued after the course ended, with assistance from GPT-5.6 Sol.
-
 [![CI](https://github.com/HollisPeng/ncurses-maze-game/actions/workflows/ci.yml/badge.svg)](https://github.com/HollisPeng/ncurses-maze-game/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 English · [简体中文](README.zh-CN.md)
+
+> This project was originally developed as my final project for ESTR1002 — Problem Solving by Programming during my first year. My sincere thanks to the professor for awarding me an A. 🙏
+>
+> Development continued after the course ended, with assistance from GPT-5.6 Sol.
 
 A terminal maze game written in C11 with the wide-character ncurses library. Navigate a fixed maze, collect the key, avoid timed spikes, use teleporters and powerups, and catch an exit that moves away from you.
 
