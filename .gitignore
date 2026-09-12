@@ -1,9 +1,12 @@
 # CMake build directories and generated files
 build/
+build-*/
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+CTestTestfile.cmake
+Testing/
 Makefile
 compile_commands.json
 
@@ -11,7 +14,7 @@ compile_commands.json
 *.o
 *.obj
 *.a
-*.lib
+*.so
 *.dll
 *.exe
 
