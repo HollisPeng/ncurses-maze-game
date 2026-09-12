@@ -1,8 +1,10 @@
 #define _POSIX_C_SOURCE 200809L
 
+#include <signal.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 
 #include <curses.h>
@@ -16,6 +18,24 @@ enum {
     MENU_EXIT = 2,
     MENU_ITEM_COUNT = 3
 };
+
+static volatile sig_atomic_t stop_requested = 0;
+
+static void request_stop(int signal_number) {
+    (void)signal_number;
+    stop_requested = 1;
+}
+
+static bool install_signal_handlers(void) {
+    struct sigaction action;
+    memset(&action, 0, sizeof(action));
+    action.sa_handler = request_stop;
+    if (sigemptyset(&action.sa_mask) != 0) {
+        return false;
+    }
+    return sigaction(SIGINT, &action, NULL) == 0 &&
+           sigaction(SIGTERM, &action, NULL) == 0;
+}
 
 static uint64_t monotonic_milliseconds(void) {
     struct timespec time_value;
@@ -92,6 +112,9 @@ int main(void) {
     int menu_selection = MENU_START;
     bool running = true;
 
+    if (!install_signal_handlers()) {
+        return EXIT_FAILURE;
+    }
     game_init(&game, make_seed());
     if (!ui_init()) {
         return EXIT_FAILURE;
@@ -101,7 +124,7 @@ int main(void) {
         return EXIT_FAILURE;
     }
 
-    while (running) {
+    while (running && stop_requested == 0) {
         if (game.status == GAME_TITLE) {
             ui_use_blocking_input();
             ui_draw_title(&game, menu_selection);
