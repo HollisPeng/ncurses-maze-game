@@ -1,6 +1,6 @@
 # ncurses Maze Game
 
-> This project was originally developed as my final project for ESTR1002 during my first year. My sincere thanks to the professor for awarding me an A. 🙏
+> This project was originally developed as my final project for ESTR1002 — Problem Solving by Programming during my first year. My sincere thanks to the professor for awarding me an A. 🙏
 >
 > Development continued after the course ended, with assistance from GPT-5.6 Sol.
 
