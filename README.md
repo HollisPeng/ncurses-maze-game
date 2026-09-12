@@ -148,7 +148,7 @@ The following optional features from the original project specification have not
 
 ## Original course submission
 
-The unmodified repository baseline is preserved on the [`archive/course-submission`](https://github.com/HollisPeng/ncurses-maze-game/tree/archive/course-submission) branch. The current version is a post-course refinement of that work.
+The unmodified repository baseline is preserved in the initial commit [`bd4ef62`](https://github.com/HollisPeng/ncurses-maze-game/tree/bd4ef629c59b799a2444482435653f7fb37a0fa4). The current version is a post-course refinement of that work.
 
 ## License
 

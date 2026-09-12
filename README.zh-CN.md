@@ -148,7 +148,7 @@ GitHub Actions 会在 Ubuntu 上执行 GCC、Clang 和 Sanitizer 构建。
 
 ## 原始课程提交
 
-仓库最初的未修改版本保存在 [`archive/course-submission`](https://github.com/HollisPeng/ncurses-maze-game/tree/archive/course-submission) 分支。当前版本是在课程结束后继续完善的版本。
+仓库最初的未修改版本保存在初始提交 [`bd4ef62`](https://github.com/HollisPeng/ncurses-maze-game/tree/bd4ef629c59b799a2444482435653f7fb37a0fa4) 中。当前版本是在课程结束后继续完善的版本。
 
 ## 许可证
 
