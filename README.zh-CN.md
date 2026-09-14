@@ -145,6 +145,7 @@ GitHub Actions 会在 Ubuntu 上执行 GCC、Clang 和 Sanitizer 构建。
 - [ ] 随机生成迷宫，并保证出口可达
 - [ ] 无限平铺迷宫与循环滚动
 - [ ] 玩家能量及能量耗尽后的失败机制
+- [ ] 通过 MSYS2 UCRT64 支持 Windows
 
 ## 原始课程提交
 

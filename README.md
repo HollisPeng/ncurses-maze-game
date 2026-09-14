@@ -145,6 +145,7 @@ The following optional features from the original project specification have not
 - [ ] Random maze generation with guaranteed exit reachability
 - [ ] Infinite tiled maze with wrap-around scrolling
 - [ ] Player energy and an energy-depletion losing condition
+- [ ] Windows support through MSYS2 UCRT64
 
 ## Original course submission
 
